@@ -8,7 +8,7 @@ def timer(func):
         func(*args, **kwargs)
         end = datetime.now()
         res = end - start
-        return (f'{func(*args, **kwargs)}\nВремя выполнения: {res}')
+        return print('Время выполнения: ', res)
     return time_zone
 
         
